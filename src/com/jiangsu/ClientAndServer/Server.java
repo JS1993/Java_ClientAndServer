@@ -24,6 +24,8 @@ public class Server {
 						String line = br.readLine();		//读取客户端写过来的数据
 						line = new StringBuilder(line).reverse().toString();
 						ps.println(line);
+						
+						System.out.println(line);
 						socket.close();
 					} catch (IOException e) {
 						e.printStackTrace();

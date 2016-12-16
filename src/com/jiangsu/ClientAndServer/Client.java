@@ -24,6 +24,9 @@ public class Client {
 		PrintStream ps = new PrintStream(socket.getOutputStream());
 		
 		ps.println(sc.nextLine());
+		System.out.println(br.readLine());
+		sc.close();
+		socket.close();
 	}
 
 }
